@@ -1,4 +1,4 @@
-[How Syntax order and Execution Order work at MySQL]
+[How Syntax order and Execution order work at MySQL]
 
 Syntax order -> Execution order
 
@@ -32,10 +32,10 @@ Syntax order -> Execution order
 
 [How Aliases work]
 
-If a table alias is defined in the FROM clause (e.g., FROM Table1 AS T1), 
+If a table alias is defined in the FROM clause (e.g., FROM Table1 AS T1),
 it can be used in the SELECT and ORDER BY clauses (e.g., SELECT T1.Col1, ORDER BY T1.Col1).
 
-If a column alias is defined in the SELECT clause (e.g., SELECT T1.Col1 AS TC), 
+If a column alias is defined in the SELECT clause (e.g., SELECT T1.Col1 AS TC),
 it can be used in the ORDER BY clause (e.g., ORDER BY TC).
 
 Note that T1.TC cannot be used in ORDER BY; cause TC replaces T1.Col1

@@ -1,12 +1,12 @@
 # 🧩 SQL Basic Query (1)
 
-Retrieve all columns from a table
+1. Retrieve all columns from a table (All data)
 ```sql
 SELECT * 
 FROM employees;
 ```
 ---
-Retrieve specific columns
+2. Retrieve specific columns (selecting some of columns)
 ```sql
 SELECT 
 	name,
@@ -15,23 +15,23 @@ SELECT
 FROM employees;
 ```
 ---
-WHERE clause: Retrieve data that matches a specific column value
+3. WHERE clause: Retrieve data that matches a specific column value (shows who got that emp_id)
 ```sql
 SELECT *
 FROM employees
 WHERE
 	emp_id = 5;
 ```
-ex) Retrieve an employee whose name is ‘강영화’ and gender is ‘M’
+Retrieve an employee whose name is ‘jennie’ and gender is ‘F’
 ```sql
 SELECT *
 FROM employees
 WHERE 
-	name = '강영화'
-	AND gender = 'M';
+	name = 'jennie'
+	AND gender = 'F';
 ```
 ---
-Filter by date
+3-1. Filter by date
 ```sql
 SELECT *
 FROM employees
@@ -39,7 +39,7 @@ WHERE
 	hire_at >= '2023-01-01';
 ```
 ---
-Retrieve only employees who are still working (NULL check)
+3-2. Retrieve only employees who are still working (NULL check) ('fire_at is null' means someone hasn't quit and still be at work)
 ```sql
 SELECT *
 FROM employees
@@ -47,8 +47,9 @@ WHERE
 	fire_at IS NULL;
 ```
 ---
-Using AND and OR together in a WHERE clause
-ex) Retrieve employees who were hired after 2025-01-01 or before 2000-01-01, <br>
+3-3. Using AND and OR together in a WHERE clause <br>
+
+Retrieve employees who were hired after 2025-01-01 or before 2000-01-01, <br>
 and have already left the company.
 ```sql
 SELECT *
@@ -61,7 +62,7 @@ WHERE
 	AND fire_at IS NOT NULL;
 ```
 ---
-BETWEEN operator: Retrieve data within a specific range
+3-4. BETWEEN operator: Retrieve data within a specific range (YYYY-MM-DD ~ YYYY-MM-DD)
 ```sql
 SELECT *
 FROM employees
@@ -77,7 +78,7 @@ WHERE
 	AND emp_id <= 10010;
 ```
 ---
-IN operator: Retrieve data that matches one of several values
+3-5. IN operator: Retrieve data that matches one of several values (you can use 'IN' for collecting multiple numbers)
 ```sql
 SELECT *
 FROM employees 

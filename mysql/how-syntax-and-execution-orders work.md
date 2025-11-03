@@ -1,7 +1,5 @@
 [How Syntax order and Execution order work at MySQL]
 
-Syntax order -> Execution order
-
 - Syntax Order
 
 1. SELECT

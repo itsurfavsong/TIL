@@ -1,4 +1,4 @@
-# 🧩 SQL functions (2)
+# 🧩 SQL functions
 
 1. Data Type Conversion Functions <br>
 
@@ -17,7 +17,7 @@ SELECT
 
 2-1. IF(condition, value_if_true, value_if_false)<br>
 
-- Used to perform conditional branching.
+Used to perform conditional branching.
 
 Example: If gender is M, return “남자 (Male)”; otherwise, “여자 (Female)”.
 
@@ -124,12 +124,14 @@ SELECT
 3-8. TRIM([direction] substring FROM string) <br>
 Removes a specific substring from one or both sides of a string.
 
-Directions:
-LEADING – left side
-TRAILING – right side
+Directions: <br>
+LEADING – left side <br>
+TRAILING – right side <br>
 BOTH – both sides
 
-Example: remove "Bearer " prefix.
+Example: remove "Bearer " prefix. <br>
+("bearer" means the token is a security credential that grants access to the person or "bearer" who possesses it, <br>
+without requiring further identification.)
 
 ```sql
 SELECT TRIM(LEADING 'Bearer ' FROM 'Bearer dfkajldsfjafjksdjalfkjds');
@@ -153,8 +155,8 @@ SELECT SUBSTRING_INDEX('your_fav_song', '_', 2);
 
 4. Mathematical Functions
 
-CEILING(x) - Rounds up
-FLOOR(x) - Rounds down
+CEILING(x) - Rounds up <br>
+FLOOR(x) - Rounds down <br>
 ROUND(x) - Rounds to nearest integer
 
 ```sql
@@ -170,9 +172,10 @@ SELECT TRUNCATE(3.14847895, 2);
 
 ---
 
-5. Date and Time Functions
-   5-1. NOW() <br>
-   Returns the current date and time (YYYY-MM-DD HH:mm:ss).
+5. Date and Time Functions <br>
+
+5-1. NOW() <br>
+Returns the current date and time (YYYY-MM-DD HH:mm:ss).
 
 ```sql
 SELECT NOW();
@@ -226,9 +229,10 @@ FROM salaries;
 ---
 
 7. Ranking Functions
-   7-1. RANK() OVER(ORDER BY column ASC/DESC) <br>
-   Assigns ranks based on a column’s order. <br>
-   Tied values receive the same rank.
+
+7-1. RANK() OVER(ORDER BY column ASC/DESC) <br>
+Assigns ranks based on a column’s order. <br>
+Tied values receive the same rank.
 
 ```sql
 SELECT

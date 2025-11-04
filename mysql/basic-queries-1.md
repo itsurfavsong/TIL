@@ -1,6 +1,6 @@
 # 🧩 SQL Basic Query (1)
 
-1. SELECT clause
+1. SELECT statement
 
 Retrieve all columns from a table (All data)
 ```sql

@@ -10,7 +10,7 @@ Because there is an "=" operator, it must be a one-to-one match. <br>
 Therefore, if the subquery returns multiple results (1-to-many), <br>
 you must use "IN" instead.
 
-ex) Print the employee ID and name of the manager of department D001.
+[example] Print the employee ID and name of the manager of department D001.
 
 ```sql
 SELECT 
@@ -56,7 +56,7 @@ WHERE
 When the subquery returns multiple columns, <br>
 it can compare multiple conditions at once with the main query. 
 
-ex) Get the joining date of the current manager of department D002.
+[example] Get the joining date of the current manager of department D002.
 
 ```sql
 SELECT
@@ -78,7 +78,7 @@ WHERE
 🔗 Correlated Subquery <br>
 A correlated subquery references a column from the outer (main) query. <br>
 
-ex) Print information of employees who have ever held a manager position.
+[example] Print information of employees who have ever held a manager position.
 
 ```sql
 SELECT 
